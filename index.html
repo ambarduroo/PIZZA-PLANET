@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizza Planet - Pizza Party Catering. Especialistas en pizzas a la parrilla, elaboración a la vista y catering para eventos.">
+  <title>Pizza Planet | Pizza Party Catering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">P</span>
+      <span>PIZZA <strong>PLANET</strong><small>PIZZA PARTY CATERING</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#menu">Nuestras pizzas</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto" class="nav-contact">Consultar evento ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="dot"></span> PIZZA PARTY · CATERING</span>
+
+        <h1>Una buena pizza.<br>Un momento <span>inolvidable.</span></h1>
+
+        <p>El sabor de la parrilla, la elaboración a la vista y todo lo que necesitás para compartir un gran momento.</p>
+
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#contacto">Organizá tu evento ↗</a>
+          <a class="button button-outline" href="#menu">Descubrí el menú</a>
+        </div>
+
+        <div class="hero-note">
+          <span>✦</span> 15 años de trayectoria
+          <span class="note-separator">/</span>
+          Especialidad a la parrilla
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=85"
+          alt="Pizza recién preparada"
+        >
+        <div class="image-label">
+          <span>HECHO A LA VISTA</span>
+          <strong>El sabor está en los detalles.</strong>
+        </div>
+        <div class="hero-badge">
+          <span>15</span>
+          <small>AÑOS DE<br>TRAYECTORIA</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="nosotros">
+      <div class="section-tag">01 — NUESTRA ESENCIA</div>
+      <div class="intro-grid">
+        <h2>La pizza es la excusa.<br><span>El encuentro es todo.</span></h2>
+        <div>
+          <p>En Pizza Planet llevamos 15 años acompañando celebraciones y creando momentos alrededor de una buena pizza.</p>
+          <p>Nuestra especialidad es la elaboración a la vista y a la parrilla, para que cada evento tenga ese sabor especial.</p>
+          <a href="#contacto" class="text-link">Conocé nuestro servicio ↗</a>
+        </div>
+      </div>
+
+      <div class="values">
+        <article class="value-card">
+          <span>01</span>
+          <div class="value-icon">🔥</div>
+          <h3>Especialidad a la parrilla</h3>
+          <p>El sabor y la experiencia de una pizza hecha en el momento.</p>
+        </article>
+        <article class="value-card">
+          <span>02</span>
+          <div class="value-icon">✦</div>
+          <h3>Elaboración a la vista</h3>
+          <p>Un servicio que también forma parte del espectáculo.</p>
+        </article>
+        <article class="value-card">
+          <span>03</span>
+          <div class="value-icon">♡</div>
+          <h3>15 años de experiencia</h3>
+          <p>Acompañando encuentros, fiestas y celebraciones.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-tag">02 — NUESTRO MENÚ</div>
+      <div class="section-heading">
+        <div>
+          <h2>Hay una pizza <span>para cada gusto.</span></h2>
+          <p>Clásicas, especiales y opciones para compartir.</p>
+        </div>
+        <a href="#contacto" class="text-link">Consultar por el menú completo ↗</a>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar menú">
+        <button class="filter active" data-filter="todas">Todas</button>
+        <button class="filter" data-filter="clasicas">Clásicas</button>
+        <button class="filter" data-filter="especiales">Especiales</button>
+        <button class="filter" data-filter="extras">Panes y extras</button>
+      </div>
+
+      <div class="pizza-grid">
+        <article class="pizza-card" data-category="clasicas">
+          <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80" alt="Pizza de muzzarella">
+          <div class="pizza-info">
+            <span class="pizza-type">CLÁSICA</span>
+            <h3>Muzzarella</h3>
+            <p>Salsa, muzzarella y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza napolitana">
+          <div class="pizza-info">
+            <span class="pizza-type">ESPECIAL</span>
+            <h3>Napolitana</h3>
+            <p>Salsa, muzzarella, tomate, ajo, parmesano y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pizza capresse">
+          <div class="pizza-info">
+            <span class="pizza-type">ESPECIAL</span>
+            <h3>Capresse</h3>
+            <p>Muzzarella, tomate, albahaca, parmesano y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="clasicas">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza de jamón">
+          <div class="pizza-info">
+            <span class="pizza-type">CLÁSICA</span>
+            <h3>Jamón y morrón</h3>
+            <p>Salsa, muzzarella, jamón, morrones y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80" alt="Pizza de rúcula y parmesano">
+          <div class="pizza-info">
+            <span class="pizza-type">ESPECIAL</span>
+            <h3>Rúcula y parmesano</h3>
+            <p>Rúcula, jamón crudo, parmesano y aceite.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="clasicas">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pizza fugazza">
+          <div class="pizza-info">
+            <span class="pizza-type">CLÁSICA</span>
+            <h3>Fugazza con queso</h3>
+            <p>Muzzarella, cebolla, parmesano y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza de champiñones">
+          <div class="pizza-info">
+            <span class="pizza-type">ESPECIAL</span>
+            <h3>Champiñones</h3>
+            <p>Salsa, muzzarella, champiñones, ajo y orégano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card" data-category="extras">
+          <img src="https://images.unsplash.com/photo-1619531040576-f9416740661b?auto=format&fit=crop&w=700&q=80" alt="Pan saborizado">
+          <div class="pizza-info">
+            <span class="pizza-type">PARA COMPARTIR</span>
+            <h3>Panes saborizados</h3>
+            <p>Opciones de muzzarella y orégano, capresse y parmesano.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-footer">
+        <p>¿Buscás otra variedad? Tenemos más opciones para tu evento.</p>
+        <a class="button button-dark" href="#contacto">Consultar variedades ↗</a>
+      </div>
+    </section>
+
+    <section class="services section" id="servicios">
+      <div class="section-tag">03 — MUCHO MÁS QUE PIZZA</div>
+      <div class="section-heading">
+        <div>
+          <h2>Tu evento, <span>nuestro sabor.</span></h2>
+          <p>Una propuesta para disfrutar y compartir.</p>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizzas para eventos">
+          <div class="service-overlay">
+            <span>01 / CATERING</span>
+            <h3>Pizza Party</h3>
+            <p>Un servicio pensado para disfrutar de las pizzas recién hechas.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80" alt="Calzone y pizzas rellenas">
+          <div class="service-overlay">
+            <span>02 / ESPECIALIDADES</span>
+            <h3>Calzones y pizzas rellenas</h3>
+            <p>Más opciones para sumar a la mesa.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Postres">
+          <div class="service-overlay">
+            <span>03 / TOQUE DULCE</span>
+            <h3>Postres y mesa dulce</h3>
+            <p>Una opción dulce para cerrar la celebración.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-content">
+        <div class="section-tag">04 — HABLEMOS DE TU EVENTO</div>
+        <h2>Vos ponés el motivo.<br><span>Nosotros ponemos la pizza.</span></h2>
+        <p>Escribinos para consultar por nuestro servicio de catering, las variedades y tu próximo evento.</p>
+        <a class="button button-primary" href="https://wa.me/5491131703365?text=Hola%20Pizza%20Planet%2C%20quisiera%20consultar%20por%20el%20servicio%20de%20catering." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+      </div>
+      <div class="contact-side">
+        <span class="contact-symbol">P.</span>
+        <p>Pizza Planet</p>
+        <span>Pizza Party · Catering</span>
+        <div class="contact-line"></div>
+        <p class="contact-small">15 años de trayectoria<br>Especialidad a la parrilla<br>Elaboración a la vista</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="footer-logo">PIZZA <strong>PLANET</strong></a>
+    <p>Una buena pizza siempre reúne.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+    <small>© <span id="year"></span> Pizza Planet · Pizza Party Catering</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
